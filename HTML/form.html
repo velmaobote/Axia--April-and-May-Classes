@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/form.css" />
+    <title>Reg Form</title>
+  </head>
+
+  <body>
+    <header>
+      <hr />
+      <h2 id="head">Registration Form</h2>
+      <hr />
+
+      <div>
+        <p class="classOne">
+          Please fill in the form below to get onto Axia training
+        </p>
+      </div>
+    </header>
+
+    <main>
+      <p class="firstParagrapgh">Ensure all the details are correct</p>
+      <form action="submit_form.py" method="post">
+        <div>
+          <label for="fName">First Name</label>
+          <br />
+          <input type="text" name="fName" id="fName" />
+        </div>
+
+        <div>
+          <label for="lName">Last Name</label>
+          <br />
+          <input type="text" name="lName" id="lName" />
+        </div>
+
+        <div>
+          <label for="email">Email</label>
+          <br />
+          <input type="email" name="email" id="email" />
+        </div>
+
+        <p class="classOne">
+          Please use a strong password for security reasons
+        </p>
+        <div>
+          <label for="pswd">Password</label>
+          <br />
+          <input type="password" name="pswd" id="pswd" />
+        </div>
+
+        <div>
+          <label for="Age">Age</label>
+          <br />
+          <input type="number" name="Age" id="Age" />
+        </div>
+
+        <div>
+          <label for="Gender">Gender</label>
+          <br />
+          <select name="Gender" id="Gender">
+            <option value="">Select Your Gender</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Prefer not to say">Prefer not to say</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="Educational Background">Educational Background</label>
+          <br />
+          <select name="Educational Background" id="Educational Background">
+            <option value="">Select Your Educational Background</option>
+            <option value="ssce">SSCE</option>
+            <option value="bsc">BSC</option>
+            <option value="msc">MSC</option>
+            <option value="phd">PHD</option>
+            <option value="Others">Others</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="laptop">Do you own a laptop</label>
+          <input type="radio" name="laptop" id="laptop-yes" />
+          <label for="laptop-yes">YES</label>
+
+          <input type="radio" name="laptop" id="laptop-no" />
+          <label for="laptop-no">NO</label>
+        </div>
+
+        <div>
+          <label for="">How did you hear about Axia</label>
+          <br />
+          <input type="checkbox" name="source" id="facebook" />
+          <label for="facebook">Facebook</label>
+          <br />
+          <input type="checkbox" name="source" id="instagram" />
+          <label for="instagram">Instagram</label>
+          <br />
+          <input type="checkbox" name="source" id="whatsapp" />
+          <label for="whatsapp">WhatsApp</label>
+          <br />
+          <input type="checkbox" name="source" id="others" />
+          <label for="others">Others</label>
+        </div>
+
+        <div>
+          <label for="about">Tell us about yourself</label>
+          <br />
+          <textarea
+            name="about"
+            id="about"
+            cols="30"
+            rows="10"
+            placeholder="Comment here..."
+          ></textarea>
+        </div>
+
+        <button type="submit">Submit</button>
+
+        <!-- to type the vertical bar or pipe (|)...press Shift + \. It usually shares a key with \ (backslash). The | symbol is often used as a separator in footers, menus, or breadcrumb trails -->
+        <footer>
+          <small>visit Axia.Africa.com | &copy; 2025</small>
+        </footer>
+      </form>
+    </main>
+  </body>
+</html>

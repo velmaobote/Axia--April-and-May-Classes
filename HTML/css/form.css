@@ -1,0 +1,67 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: rgb(193, 121, 121);
+}
+
+/* h2 {
+  text-align: center;
+  font-size: 30px;
+} */
+
+/* selects all the 2 paragraphs, so to only apply to one p, introduce class and IDs so it stops being p {background-color: blueviolet;}
+.firstParagrapgh {
+  background-color: blueviolet;
+} */
+
+/* to make two paragrapghs look the same, assign the same class name
+.classOne {
+  background-color: cyan;
+  color: red;
+} */
+
+/* always use #
+#head {
+  color: white;
+} */
+
+/* but we have so many inputs, so we specify by using attribute selector by using square brackets [] i.e input[type=""], but you want to narrow it, you use #id or name i.e  <input type="text" name="fName" id="fName" />
+input[type="text"] {
+  width: 500px;
+} */
+
+/* Pseudo class selectors- hover, focus,active, checked eyec */
+/* p:hover {
+  background-color: cyan;
+} */
+
+/* input:focus {
+  background-color: red;
+} */
+
+/* Group selectors..i.e to select both h2, p and label, sepertae with a comma
+h2 {
+  color: white;
+}
+p {
+  color: white;
+}
+label {
+  color: white;
+} */
+
+/* h2,
+p,
+label {
+  color: white;
+  background-color: crimson;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+} */
+
+/* for, Descendant slelectors, there is not comma, but you have to establish the article. i.e, if we have 2 paragrapghs, one in the header and another in the main, we will write */
+/* main p {
+  color: blue;
+} */
+/* child selectors are like descendant selectors but are seperated by > i.e  */

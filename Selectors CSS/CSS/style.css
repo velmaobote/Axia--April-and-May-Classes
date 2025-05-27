@@ -1,0 +1,100 @@
+/* to use child selector...
+ul > li {
+  background-color: red;
+} */
+
+/* to use nth-child, alsways starts with : then the number put in a bracket i.e li:nth-child (3)...it starts with li not ul...unlike child selector
+li:nth-child(3) {
+  background-color: blue;
+} */
+
+/* to select the last one, count from bottom, so the last is denotated with the number 1
+li:nth-last-child(1) {
+  background-color: rgb(0, 255, 179);
+} */
+
+/* element selector */
+p {
+  font-size: 18px;
+}
+
+/* ID Selector...always start with# */
+/* #unique {
+  color: red;
+} */
+
+#unique {
+  background-color: rgb(55, 38, 38);
+  width: 400px;
+  height: 50px;
+  padding: 30px;
+}
+
+/* SPAN to highligh a specific word in a paragrapgh sentense, introduce <span> just before the word with a class in the html i.e <p span...then sart it with a dot
+<p>This is a <span class="spanEl">paragraph</span> with a class selector</p> */
+
+/* OPTION 1 */
+/* .spanEl {
+  color: yellowgreen;
+  font-size: larger;
+  font-weight: 700;
+} */
+/* OPTION 2 */
+/* .box p span {
+  color: yellowgreen;
+  font-size: larger;
+  font-weight: 700;
+}
+
+/* class selector */
+/* .note {
+  color: blue;
+  background-color: lightpink;
+} */
+
+/* .text {
+  font-size: 18px;
+  color: teal;
+} */
+
+/* Descendant selectors...targets last element which is p */
+/* .box p {
+  background-color: lightpink;
+} */
+
+/* Child selectors */
+ul > li {
+  list-style-type: square;
+  color: brown;
+}
+
+/* Pseudo class selectors...hover, focus, aactive, checked etc... */
+a:hover {
+  color: red;
+}
+
+/* Attribute Selectors...use square brackets */
+a[href] {
+  text-decoration: none;
+}
+
+.newParagraph {
+  line-height: 1.5;
+  text-transform: capitalize;
+}
+
+/* background image...images from unsplash...then we link (../ to come out style.css then CSS folder thus 2 dots before slash...however, it wont show the image if we dont link the stle.css from inside the CSS folder to the index html thus...<link rel="stylesheet" href="./CSS/style.css"> */
+
+body {
+  background-image: url(../images/bgImage.png);
+  background-size: 50%;
+  /* background-size: 50%; or COVER for 100%/full*/
+  /* background-position: center;
+  background-repeat: no-repeat;  */
+}
+
+/* .bg {
+  background-color: #000000;
+  opacity: 0.5;
+  min-height: 100%;
+} */

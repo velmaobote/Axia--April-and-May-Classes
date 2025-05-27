@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google font family (Poppins) Copy the embeded link, paste below, then copy/pastethe css style to your css folder. This is a new change-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Hero Page</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header>
+      <!-- Div 1 -->
+      <div class="">
+        <h1>YOUR LOGO</h1>
+      </div>
+
+      <!-- Div 2- Navigation -->
+      <!-- <nav class="">
+        <ul>
+          assests has the chevron-dropdown arrow (import from heroicons)menu, we introduce select then options
+          <div class="asset-icon">
+            <select name="assets" id="assets">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+
+              <option value="assets">Assets</option>
+              <option value="illustrations">Illustrations</option>
+              <option value="icons">Icons</option>
+              <option value="mockups">Mockups</option>
+              <option value="templates">Templates</option>
+              <option value="photos">Stock Photos</option>
+              <option value="videos">Stock Videos</option>
+              <option value="3d-assets">3D Assets</option>
+              <option value="ui-kits">UI Kits</option>
+              <option value="design-systems">Design Systems</option>
+            </select>
+          </div>
+
+          <li class="Creators">Creators</li>
+          <li class="Careers">Careers</li>
+          <li class="Go Pro">Go Pro</li>
+        </ul>
+      </nav> -->
+
+      <!-- since it is harder to style select, ✅ Skip the <select> element (it’s hard to style consistently across browsers)
+✅ Use a <li> with a nested <ul> dropdown, fully controlled with CSS. -->
+      <nav>
+        <ul class="nav-menu">
+          <li class="dropdown">
+            Assets
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="chevron-icon"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="m19.5 8.25-7.5 7.5-7.5-7.5"
+              />
+            </svg>
+            <ul class="dropdown-menu">
+              <li>Illustrations</li>
+              <li>Icons</li>
+              <li>Mockups</li>
+              <li>Templates</li>
+              <li>Stock Photos</li>
+              <li>Stock Videos</li>
+              <li>3D Assets</li>
+              <li>UI Kits</li>
+              <li>Design Systems</li>
+            </ul>
+          </li>
+          <li>Creators</li>
+          <li>Careers</li>
+          <li>Go Pro</li>
+        </ul>
+      </nav>
+
+      <!-- Div 3 To insert the search icon from hero icons, copying in SVG format prouces a Huge icon, therefore, add searchSVG  or just apply it to class="size-6 after pasting the link so that you edit height and width in css, -->
+
+      <!-- Also to put the icon the word serch in one outline, flex and align center, but first, make the entire search div a class  -->
+      <div class="search">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="currentColor"
+          class="size-6 searchSVG"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+          />
+        </svg>
+        <!-- To place both the word search and the icon in one border, add class inside the input (class="searchInput") then style in the CSS to flex them  -->
+        <input type="text" placeholder="Search" class="searchInput" />
+      </div>
+
+      <!-- Div 4 -->
+      <div class="">
+        <button class="logIn">Log In</button>
+        <button class="signUp">Sign Up</button>
+      </div>
+    </header>
+
+    <section class="container">
+      <main>
+        <!-- text area -->
+        <div class="textArea">
+          <div class=""></div>
+
+          <div class="">
+            <h1 class="">
+              Hi, I’m Velma <br />
+              your next <br />
+              favorite designer!
+            </h1>
+          </div>
+
+          <div class="">
+            <p class="">
+              Crafting beautiful, responsive, <br />
+              human-centered designs.
+            </p>
+          </div>
+
+          <div class="btn">
+            <button class="btn-1">Hire Me</button>
+            <button class="btn-2">View Work</button>
+          </div>
+
+          <div class=""></div>
+        </div>
+
+        <!-- image area -->
+        <div class="imageArea">
+          <div class="imageContainer">
+            <img src="./image/hero-mainimage.jpg" alt="hero-mainimage" />
+          </div>
+
+          <div class="img-profile">
+            <div class="profile-image">
+              <img
+                src="./image/hero-profileimage.jpg"
+                alt="hero-profileimage"
+              />
+            </div>
+            <div class="">
+              <h4 class="">Velma Obote</h4>
+              <!-- To add fire emoji, windows+. -->
+              <p class="">Velma’s designs always light up the screen!🔥</p>
+            </div>
+          </div>
+        </div>
+      </main>
+    </section>
+  </body>
+</html>

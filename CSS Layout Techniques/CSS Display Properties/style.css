@@ -1,0 +1,42 @@
+/* body {
+  display: grid;
+  place-items: center;
+}
+
+main {
+  width: 400px;
+  height: 400px;
+  margin: auto;
+  margin-top: 10rex;
+} */
+
+/* if you dont add display; inline block, it doesnt respect these dimensions ansd stays the same */
+a {
+  width: 400px;
+  height: 400px;
+}
+
+h1 {
+  background-color: yellow;
+  width: 400px;
+  height: 400px;
+}
+
+p {
+  background-color: purple;
+  display: none;
+}
+
+/* inline-block element */
+a {
+  background-color: rgb(61, 61, 137);
+  color: white;
+  width: 400px;
+  height: 400px;
+  /* display: block; */
+}
+
+button {
+  background-color: aqua;
+  /* display: block; */
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sticky Navbar and Fixed Message</title>
+  </head>
+
+  <body>
+    <!-- Here’s why your navbar might not be sticking:✅ 
+Your sticky .navbar is wrapped inside <header>, but you only applied position: sticky to .navbar —
+if the parent <header> doesn’t play nicely or if it doesn’t stretch across the viewport, the sticky effect might fail. -->
+    <!-- Navbar -->
+    <header>
+      <nav class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <div class="content">
+        <h1>Welcome to Our Page</h1>
+
+        <p>
+          <strong>Purpose:</strong> Every project we take on begins with a clear
+          purpose — to solve real problems, elevate brands, and craft meaningful
+          digital experiences that matter to both you and your audience.
+        </p>
+
+        <p>
+          <strong>Passion:</strong> Our passion fuels everything we do, from the
+          first brainstorming session to the final design handoff. We’re not
+          just building websites — we’re pouring our creativity and heart into
+          work that inspires.
+        </p>
+
+        <p>
+          <strong>Precision:</strong> We believe the magic is in the details.
+          From pixel-perfect layouts to seamless interactions, we ensure every
+          element is meticulously aligned to achieve a polished, professional
+          finish.
+        </p>
+
+        <p>
+          <strong>Perseverance:</strong> Great design doesn’t happen overnight.
+          We embrace the challenge, working through ideas, testing concepts, and
+          iterating tirelessly until we create something we’re truly proud of.
+        </p>
+
+        <p>
+          <strong>Partnership:</strong> We see every client as a partner on the
+          journey. Through open communication and shared vision, we collaborate
+          closely to ensure the final product feels authentically yours.
+        </p>
+
+        <p>
+          <strong>Progress:</strong> We are passionate about learning, growing,
+          and evolving. Whether it’s adopting the latest design trends or
+          refining our own processes, we strive for progress with every project
+          we touch.
+        </p>
+
+        <p>
+          <strong>Potential:</strong> We see untapped potential in every brand,
+          every concept, every idea. Our mission is to help you unlock that
+          potential and transform it into a digital presence that commands
+          attention.
+        </p>
+      </div>
+    </main>
+
+    <!-- Fixed Message Box;  type the 💬 (chat bubble) emoji in VS Code using; (Windows key + period) → this opens the emoji picker.then Search for “speech,” -->
+    <div class="message-box"><span>💬</span>Chat with us!</div>
+  </body>
+</html>

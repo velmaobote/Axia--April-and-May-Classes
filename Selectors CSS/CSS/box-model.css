@@ -1,0 +1,46 @@
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  /* margin-top: 50px; */
+  padding-top: 50px;
+}
+
+.margin {
+  background-color: #ffe4e1;
+  width: 500px;
+  margin: 0 auto;
+  /* height: 700px; */
+}
+
+.border {
+  background-color: #000000;
+  /* border: 5px solid black; */
+  color: #ffffff;
+}
+
+.padding {
+  background-color: #90ee90;
+  padding: 20px;
+}
+
+.content {
+  background-color: #ffffe0;
+  border: 1px dashed gray;
+  color: #000000;
+}
+
+button {
+  margin: 200px 0 0 0;
+  padding: 10px 40px;
+  width: 150px;
+  /* padding-top: 20px;
+    padding-bottom: 25px;
+    padding-left: 30px;
+    padding-right: 40px; */
+
+  /* but to put all in one, move in clockwise directio, no commas, padding: 20px 40px 25px 30px; ...but if you only write two i.e, 20px 30px, it interprets it as UP-DOWN
+  then the second pair as SIDEWAYS*/
+
+  background-color: greenyellow;
+}

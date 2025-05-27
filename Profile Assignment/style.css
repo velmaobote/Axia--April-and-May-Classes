@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #f9eaff, #e1f1ff);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.profile-card {
+  border: 2px solid rgb(11, 2, 45);
+  width: 350px;
+  background-color: rgb(87, 103, 145);
+  text-align: center;
+  padding: 30px 5px;
+  margin: 150px auto;
+  border-radius: 20px;
+  color: white;
+  position: relative;
+}
+
+.badge {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: #ff4b5c;
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 12px;
+  font-size: 0.75rem;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.profile-image img {
+  width: 100px;
+  border-radius: 25px;
+  border: 3px solid white;
+}
+
+.details {
+  margin-bottom: 20px;
+}
+
+.details h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.details h4 {
+  color: #c0d0ff;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.details p {
+  font-size: 0.9rem;
+  color: #e0e0e0;
+}
+
+.social-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.social-links a {
+  text-decoration: none;
+}
+
+.social-links a button {
+  padding: 5px 12px;
+  background-color: greenyellow;
+  border: none;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: black;
+}
+
+.social-links a button:hover {
+  background-color: green;
+  color: white;
+}
+
+.connect-btn {
+  background: #7c4dff;
+  color: white;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.connect-btn:hover {
+  background: #6a39e2;
+}

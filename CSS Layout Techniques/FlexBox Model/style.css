@@ -1,0 +1,100 @@
+/* FLEX AREA */
+
+/* .flex-container {
+  background-color: brown;
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+  /* INTRODUCE Dynamic View height/width */
+/* height: 100dvh;
+  width: 100dvw; * */
+
+.grid-container {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+/* .flex-container {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  justify-content: space-around;
+  /* if align-content: center; is commented out, they form long lines to the bottom*/
+/* align-content: center;
+  flex-wrap: wrap;
+  height: 100vh;
+} */
+
+.grid-container {
+  background-color: brown;
+  width: 70%;
+  margin: auto;
+  padding: 40px;
+  /* INTRODUCE Dynamic View height/width */
+  height: 100dvh;
+  /* width: 100dvw; */
+
+  /* FLEX STYLYING, commented out to incorporate grid styling below */
+  /* activates the flex layout */
+  /* display: flex;
+  /* when changed to column, it aligns differently vertically going down...you can also use row/column reverse */
+  /* flex-direction: row-reverse; */
+  /* gap: 15px;...puts space btn the cells, they dont lean on each other */
+
+  /* justify-content: center; */
+  /* space between calculates space between the whole doc then allocates equally to them, making it more spaced....same to space around */
+  /* justify-content: space-between; 
+  align-items: end;
+  flex-wrap: wrap;
+} */
+
+  /* GRID AREA...still under container*/
+  display: grid;
+  /* 1fr (funtional row) for every of the 5 items... grid-template-columns: 1fr 1fr 1fr 1fr 1fr;*/
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 150px 100px 100px;
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+/* .item {
+  background-color: lightblue;
+} */
+
+/* to make them look like a bar chart, add height domensions, introduce height, and to make one colum across the entire space of row/column, introduce Grod colum/row*/
+.one {
+  background-color: lightblue;
+  /* height: 50px; */
+  grid-column: 1/3;
+}
+
+.two {
+  background-color: rgb(82, 188, 114);
+  /* height: 50px; */
+}
+
+.three {
+  background-color: rgb(176, 110, 91);
+  /* height: 50px; */
+  grid-row: 2/4;
+}
+
+.four {
+  background-color: blueviolet;
+  /* height: 50px; */
+}
+
+.five {
+  background-color: rgb(157, 173, 34);
+  /* height: 50px; */
+}
+.six {
+  background-color: rgb(34, 23, 83);
+  /* height: 50px; */
+}
+
+.seven {
+  background-color: rgb(34, 23, 83);
+  /* height: 50px; */
+}

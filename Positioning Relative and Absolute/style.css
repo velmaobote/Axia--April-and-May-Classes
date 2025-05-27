@@ -1,0 +1,110 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+body {
+  background-color: #f5f5f5;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+  margin-top: 150px;
+}
+
+/* Card Container */
+.card {
+  position: relative; /*important!- ✅ This sets the .card container as the positioning context (the reference point) for any child elements using position: absolute;.
+Without this, absolutely positioned children would align relative to the entire <body> or <html>.
+
+*/
+  background: bisque;
+  width: 300px;
+  margin: 0 auto;
+  padding: 60px 20px 20px 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*dimension and end with color */
+}
+
+/* Profile Image
+.profile-img {
+  position: absolute; /* Also removes the doc from static positioning value thus now below, top, left can now be applied*/
+/* top: -15px;
+  left: 50%; */
+/* transform: translateX(-50%); takes the image to the moddle */
+/* width: 100px;
+  height: 100px;
+  border: 5px solid white;
+  border-radius: 50%;
+  background-color: white; */
+/* object-fit: cover; */
+/* } */
+
+/* .profile-img controls the image size and shape
+object-fit: cover ensures it fills the circle properly
+margin-top: -40px lifts the image over the card’s top edge for a stylish overlap */
+
+.profile-img {
+  position: absolute; /* ✅ This image is positioned absolutely inside the .card.
+top: -15px → moves it slightly above the top edge of the card
+left: 50% + transform: translateX(-50%) → centers it horizontally
+Without .card being relative, this image would try to position itself relative to the whole page, not just the card.
+  Also removes the doc from static positioning value thus now below, top, left can now be applied*/
+  top: -15px;
+  left: 50%;
+  transform: translateX(-50%); /*takes the image to the moddle*/
+  width: 80px; /* controls size */
+  height: 80px;
+  border-radius: 50%; /*makes it circular */
+  object-fit: cover; /* keeps it neat */
+  margin-top: -40px; /*pulls image upward into the card*/
+  border: 3px solid white; /* optional: white border ring */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  background-color: white;
+}
+
+/* Badge */
+.badge {
+  position: absolute; /*✅ This badge is also positioned absolutely inside the .card.
+top: 10px → pushes it 10px down from the top
+right: 10px → pushes it 10px in from the right edge
+Again, it’s staying within the .card because .card is set to relative.*/
+  font-size: 12px;
+  top: 10px;
+  right: 10px; /* pushes it to the far right corner */
+  border: 1px solid rgb(5, 192, 5);
+  background-color: crimson;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+}
+
+/* Texts */
+.card h2 {
+  margin: 15px 0 5px;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.card h4 {
+  margin: 5px 0 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card p {
+  margin: 10px 0 20px;
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 0 10px; /* optional: add horizontal breathing room */
+}
+
+.contact {
+  display: block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  background-color: rgb(67, 192, 67);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
