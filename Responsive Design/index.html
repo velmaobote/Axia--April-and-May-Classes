@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <!--  <style>
+    .container {
+      margin: auto;
+      width: 80%; /*or width: 80vw; */
+      height: 80%; /* or height: 80%;*/
+      background-color: rgba(43, 17, 17, 0.363);
+      font-size: 2rem;
+    }
+
+    /*Media Queries Explanation: (Usually written at the end of your CSS)
+   These media queries adjust the .container styling based on screen width.
+   When the screen is 768px or smaller, we change the background to blue 
+   and increase the font size for better readability on tablets.
+   When the screen is 498px or smaller, we change the background to blueviolet 
+   and reduce the font size to fit smaller mobile screens neatly.
+   This ensures the layout remains responsive and looks good on all devices.
+*/
+    @media (max-width: 768px) {
+      .container {
+        background-color: blue;
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 497.98px) {
+      .container {
+        background-color: blueviolet;
+        font-size: 0.5rem;
+      }
+    }
+
+    /* Media Query Explanation:
+   This media query targets screens that are at least 498px wide 
+   and at least 767px wide (note: both conditions must be true).
+   It changes the body background color to greenish (rgb(68, 176, 97)) 
+   for medium-to-large screens.
+   Be careful: using two min-widths like this creates overlap,
+   so you might want to check if one was meant to be max-width instead.
+*/
+
+    @media screen and (min-width: 498px) and (min-width: 767px) {
+      body {
+        background-color: rgb(68, 176, 97);
+      }
+    }
+
+
+    /* Mobile first approch to styling- uses min witdth
+   We start with base styles for mobile screens (smallest sizes).
+   Then, using min-width media queries, we progressively enhance 
+   the design as the screen size increases:
+
+   - At 768px and larger: change background to blue and increase font size to 20px.
+   - At 992px and larger: change background to dark green, increase font size to 24px, and set text color to white.
+
+   This ensures the design scales up smoothly for tablets and desktops, 
+   following mobile-first best practices.
+*/
+
+.container {
+  background-color: #2d020243;
+  font-size: 14px;
+}
+
+
+@media (min-width: 768px) {
+  .container {
+    background-color: blue;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    background-color: darkgreen;
+    font-size: 24px;
+    color: #ffffff;
+  }
+}
+  </style> -->
+
+  <body>
+    <div class="container">This is a Div</div>
+  </body>
+</html>
