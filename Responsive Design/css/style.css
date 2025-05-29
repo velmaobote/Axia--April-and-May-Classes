@@ -1,14 +1,15 @@
-/* Desktop first approch to styling- uses max witdth
-/* Desktop-First Approach Explanation:
+/* DESKTOP FIRST APPROACH TO STYLING:
    We start by styling for large desktop screens by default.
    Then we use max-width media queries to adjust styles 
    as the screen size gets smaller:
-   
+
    - For screens up to 995px: change background to blue, increase font size.
    - For screens up to 600px: change background to brown, increase font size more, and change text color to white.
-   
+
    This approach ensures the design progressively adapts for smaller devices.
 */
+
+/* Desktop-first approach to styling — uses max-width */
 .container {
   background-color: darkgreen;
   font-size: 14px;

@@ -1,0 +1,84 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  list-style: none; /* Removes bullet listings from the navigation bar */
+  font-size: 1.2rem;
+}
+/* Flex box examaple */
+nav ul {
+  flex-wrap: wrap; /* Gets the nav contents wrap down to the next lineswhen the screen gets smaller instaed of shrinking fonts*/
+}
+
+/* Explanation:
+     - 1 → flex-grow: the item can grow to fill available space
+     - 1 → flex-shrink: the item can shrink if needed when space is tight
+     - 200px → flex-basis: the initial (minimum) width before growing or shrinking
+     Together, this setup makes the list flexible while respecting a starting width of 200px.
+  */
+li {
+  flex: 1 1 200px; /* Grow, shrink, min-width */
+}
+
+/* CSS Grid Example:
+   This creates a grid layout where:
+   - grid-template-columns: defines the columns using repeat()
+   - auto-fit: automatically fits as many columns as possible into the container
+   - minmax(250px, 1fr): each column is at least 250px wide, 
+     but can grow (stretch) to take up available space equally (1fr)
+   This makes the grid responsive and adaptable to different screen sizes.
+*/
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.humburgerMenu {
+  display: none;
+}
+
+/* To introduce menu/navigation icon, we get it from Heroicons.
+   Then we copy the SVG link to our HTML, create a <div> after nav to paste it,
+   and below the class size-6, add width="50". */
+
+/* .container {
+  background-color: darkgreen;
+  font-size: 14px;
+  color: #ffffff;
+} */
+
+/* Media Query Explanation:
+   For screens 767px wide or smaller (typically mobile devices),
+   we hide the main navigation menu (nav) and instead show the hamburger menu
+   so users can access navigation in a mobile-friendly way.
+*/
+/* @media (max-width: 767px) {
+  nav {
+    display: none;
+  }
+  .humburgerMenu {
+    display: block;
+  }
+} */
+
+@media (max-width: 767px) {
+  .container {
+    background-color: blue;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    background-color: brown;
+    font-size: 24px;
+    color: #ffffff;
+  }
+}

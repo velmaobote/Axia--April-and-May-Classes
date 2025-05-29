@@ -1,0 +1,57 @@
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  list-style: none; /* Remove bullet listings from the navigation bar */
+  font-size: 1.2rem;
+}
+
+.humburgerMenu {
+  display: none;
+}
+
+/* To introduce menu/navigation icon, we get it from Heroicons.
+   Then we copy the SVG link to our HTML, create a <div> after nav to paste it,
+   and below the class size-6, add width="50". */
+
+.container {
+  background-color: darkgreen;
+  font-size: 14px;
+  color: #ffffff;
+}
+
+/* Media Query Explanation:
+   For screens 767px wide or smaller (typically mobile devices),
+   we hide the main navigation menu (nav) and instead show the hamburger menu
+   so users can access navigation in a mobile-friendly way.
+*/
+@media (max-width: 767px) {
+  nav {
+    display: none;
+  }
+  .humburgerMenu {
+    display: block;
+  }
+}
+
+@media (max-width: 767px) {
+  .container {
+    background-color: blue;
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    background-color: brown;
+    font-size: 24px;
+    color: #ffffff;
+  }
+}
