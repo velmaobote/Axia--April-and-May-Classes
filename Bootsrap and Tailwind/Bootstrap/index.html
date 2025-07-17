@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bootsrap Demo</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Include Bootstrap’s CSS. Place the <link> tag in the <head> for our CSS.  -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      integrity="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Beginner Zone</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Explore
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">✨ Make Magic</a></li>
+                  <li>
+                    <a class="dropdown-item" href="#">🎨 Style Something</a>
+                  </li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#"
+                      >🤖 Activate Awesomeness</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button
+                class="btn btn-outline-success"
+                type="button"
+                id="downloadBtn"
+              >
+                Download
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <h1 class="display-1 fw-bold">Welcome to Velma's Bootstrap Demo</h1>
+    <h2 class="display-3">
+      Let's explore stylish layouts with just a few classes
+    </h2>
+    <button class="btn btn-primary">Click Me</button>
+    <button type="button" class="btn btn-danger">Danger</button>
+    <button class="myClass">Whatever i wanna do</button>
+
+    <div class="card" style="width: 18rem">
+      <img src="..." class="card-img-top" alt="..." />
+      <div class="card-body">
+        <h5 class="card-title">Velma’s Bootstrap Card</h5>
+        <p class="card-text">
+          Experimenting with buttons, layout, and a sprinkle of style magic.
+          <br />Click below to see what’s next!
+        </p>
+        <a href="#" class="btn btn-primary">Try It Out</a>
+      </div>
+    </div>
+
+    <!-- This code creates a responsive Bootstrap layout using the grid system. Inside a `container`, there's a `row` divided into three equal `col-md-4` columns. Each column also has `col-12`, which means that on small screens (like phones), the columns will stack vertically and take up the full width. On medium screens and larger, the `col-md-4` ensures the columns sit side-by-side, each occupying one-third of the row. 
+
+    col-12: On extra small screens (mobile), each div takes full width (12/12 = 100%), stacking vertically.
+    col-md-4: On medium screens and above, each div takes 4 out of 12 columns (⅓ of the row), displaying side by side.
+     
+    The columns have different background colors—`bg-primary` (blue), `bg-secondary` (gray), and `bg-danger` (red)—to visually distinguish them, and each contains simple text indicating its order.
+ -->
+
+    <!-- Small screens- All 3 boxes stacked vertically; edium & larger- 3 boxes appear in one horizontal row -->
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-4 bg-primary text-white p-3">
+          On small screens, I take full width. On medium and larger, I take
+          one-third of the row. I'm blue!
+        </div>
+        <div class="col-12 col-md-4 bg-secondary text-white p-3">
+          I'm the second column. I stack on small screens and line up on bigger
+          ones. Gray is my vibe!
+        </div>
+        <div class="col-12 col-md-4 bg-danger text-white p-3">
+          Third column reporting in! I'm red, responsive, and love being part of
+          a flexible layout.
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+    <!-- Trigger Button -->
+    <div class="container mt-5 text-center">
+      <button
+        type="button"
+        class="btn btn-primary"
+        data-bs-toggle="modal"
+        data-bs-target="#letterModal"
+      >
+        Read My Letter to Future Me
+      </button>
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="letterModal"
+      tabindex="-1"
+      aria-labelledby="letterModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="letterModalLabel">
+              Letter to My Future Self
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p>
+              Dear 3-months-from-now me, Right now, I’m deep in the code
+              trenches, learning, breaking things, fixing them, and sometimes
+              fixing what was never broken in the first place. But this letter
+              isn’t just a checkpoint. It’s a celebration and a promise. A
+              celebration of how far I’ve come, because not too long ago, I
+              didn’t even know what a &lt;div&gt; was. I couldn’t center a
+              button to save my life. I thought position: absolute was out to
+              get me.
+              <br />
+              But now? Now I speak in rems and components and flex like it’s a
+              second language. It hasn’t just been about the tech. It’s been
+              about consistency. About opening VS Code even when I wanted to
+              close everything and binge-watch comfort shows like yet another
+              season of The Real Housewives I’ve already seen twice but “need”
+              for emotional research. It’s been about doing the hard things even
+              when they weren’t glamorous. And most of all, it’s about reminding
+              myself daily that there will only be time for leisure if I get the
+              hard things done efficiently. It hasn’t just been about code.
+              <br />
+              It’s been about showing up for myself. Opening my laptop even when
+              I wanted to throw it across the room. Debugging things line by
+              line. Being patient when the layout didn’t layout. It’s been about
+              doing the hard things consistently, even when it wasn’t cute or
+              aesthetic. Because I’ve learned something important: there will
+              only be time for leisure if I get the hard things done
+              efficiently.
+              <br />
+              And July, my birth month, my beginning, is more than a date. It’s
+              my declaration. This month, I’m not just celebrating; I’m
+              committing. I’m committing to learning front-end development. To
+              becoming the kind of person who finishes what she starts. Who
+              stumbles, who Googles, who asks questions, and keeps building
+              anyway. I want this July energy to echo through every line of code
+              I write. I want it to carry me when motivation fades.
+              <br />
+              July, oh, sweet July, isn’t just another month. It’s my month. My
+              lucky start. My annual reset. And I’ve chosen to commit in it. To
+              code. To clarity. To becoming the version of me who finishes what
+              she starts. Who stumbles and keeps going. Who reads error messages
+              like they’re riddles and celebrates console.log like confetti.
+              <br />
+              While I work, I’m also soundtracking my growth with the voices of
+              my fellow Cancers. Luke Bryan reminds me to keep it grounded.
+              Selena Gomez keeps it gentle and strong. Lana Del Rey whispers
+              nostalgia and softness into the background. Solange Knowles brings
+              that calm, creative elegance. Ariana Grande powers through with
+              vocal runs and resilience. Tate McRae feels what I feel. Camila
+              Mendes channels quiet strength. Chloe Bailey brings the soul and
+              self-assurance. Missy Elliott is my hype woman. Post Malone gives
+              chaos and chill. Ringo Starr adds rhythm. Jessica Simpson reminds
+              me that growth is allowed to evolve. Lil’ Kim says don’t be small.
+              Kali Uchis is all vibe and vision. Priyanka Chopra Jonas is the
+              global force. And Julianne Hough? She moves with intention, and I
+              want that too.
+              <br />
+              So, future me, if you’re reading this: I hope you kept showing up.
+              I hope you’ve built something you’re proud of. Helped someone with
+              your knowledge. I hope you’re still curious. Still learning. Still
+              dancing to Lana and Ariana when CSS won’t cooperate. Because this
+              isn’t just about learning to code. It’s about becoming someone who
+              trusts herself. Someone who doesn’t run from the hard stuff.
+              Someone who codes, commits, and continues.
+              <br />
+              With love and a Cancer season playlist, present-day me
+            </p>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <br /><br />
+    <form>
+      <div class="mb-3">
+        <label for="fullName" class="form-label">Full Name</label>
+        <input type="text" class="form-control" id="fullName" />
+        <div id="fullName" class="form-text">
+          Provide your full name as it appears on your national identification.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label">Email address</label>
+        <input
+          type="email"
+          class="form-control"
+          id="exampleInputEmail1"
+          aria-describedby="emailHelp"
+        />
+        <div id="emailHelp" class="form-text">
+          We'll never share your email with anyone else.
+        </div>
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Password</label>
+        <input
+          type="password"
+          class="form-control"
+          id="exampleInputPassword1"
+        />
+      </div>
+      <div class="mb-3 form-check">
+        <input type="checkbox" class="form-check-input" id="exampleCheck1" />
+        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <br /><br />
+    <footer>&copy; 2025 Velma. All rights reserved.</footer>
+
+    <!-- Include Bootstrap’s JS. Place the <script> tag for our JavaScript bundle (including Popper for positioning dropdowns, popovers, and tooltips) before the closing body tag.-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- You can also include Popper and our JS separately. If you don’t plan to use dropdowns, popovers, or tooltips, save some kilobytes by not including Popper. -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js"
+      integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

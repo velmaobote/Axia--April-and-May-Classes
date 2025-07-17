@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TailwindCSS Demo</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+
+
+  </style>
+  <body>
+    <!-- the colour green spans across coz h1 is a block element while p is an inline element -->
+    <!-- <h1
+      class="text-4xl text-center text-red-700 bg-green-600 pt-10 font-bold underline"
+    >
+      Welcome to Velma's TailWindCSS Demo
+    </h1> -->
+
+
+      <!-- The below is also same as; <style>
+    .center {
+      width: 50px;
+      margin: 0% auto;
+    } -->
+    <div class="mx-auto">
+      <h1
+        class="w-300 mx-auto bg-green-500 text-5xl text-center text-red-700 py-10 font-bold underline"
+      >
+        Welcome to Velma's TailWindCSS Demo
+      </h1>
+    </div>
+    <!-- This line of code creates a visually centered, padded box using TailwindCSS utility classes. The outer <div> uses flex and justify-center to center any child content horizontally. The m-auto class helps center the whole block horizontally inside its parent. w-44 sets the width to 11rem, making the box a moderate size. The border and border-15 classes apply a visible 15px border, and p-12 adds 3rem of padding inside the box to give the content room to breathe. Lastly, mt-40 adds a large margin at the top (10rem) to push the element downward, helping it sit lower on the page for visual balance. -->
+    <div
+      class="flex justify-center m-auto w-44 border border-15 border-red-700 p-12 mt-40"
+    >
+      Hello, Tailwind World!
+    </div>
+
+    <h2>Building Stylish Interfaces with Utility Classes</h2>
+    <h3>From basic layouts to responsive magic</h3>
+    <h4>Powered by Tailwind’s atomic design philosophy</h4>
+    <h5>No custom CSS needed, just clarity, speed, and flow</h5>
+  </body>
+</html>

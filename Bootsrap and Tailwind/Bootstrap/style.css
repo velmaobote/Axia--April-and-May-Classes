@@ -1,0 +1,42 @@
+/* Center and space content */
+body {
+  background-color: #f8f9fa;
+  padding: 2rem;
+}
+
+/* Scope the main content to center nicely */
+h1,
+h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Style your custom button */
+.myClass {
+  background-color: rgb(139, 110, 110);
+  color: white;
+  border: 1px solid blue;
+  padding: 8px 16px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+/* !important forces a CSS rule to override any other rule — even if it's more specific or declared later (like Bootstrap’s own styles). It's a way of saying: “Ignore normal rules. THIS style wins!”. Use !important only when necessary, especially when Bootstrap classes or inline styles are overriding your custom styles and you can't easily refactor them.*/
+.myClass:hover {
+  background-color: blue;
+}
+
+/* Style the card to center and add spacing */
+.card {
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Style the footer */
+footer {
+  text-align: center;
+  margin-top: 4rem;
+  padding: 1rem 0;
+  color: #777;
+  font-size: 0.9rem;
+}
